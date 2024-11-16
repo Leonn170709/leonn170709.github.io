@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credits</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="credits.css">
+    
+    <link rel="icon" type="image/x-icon" href="Bilder/Leon.ico">
+</head>
+<body> <!--1. Credit-->
+    <div class="credits">
+        <div class="credit-item">
+            <img src="Bilder/Leon.jpg" alt="Profilbild" class="profile-pic">
+            <h2>Leon</h2>
+            <p>Developer/Hoster</p>
+        </div>
+        <!-- 2. Credit
+        <div class="credit-item">
+            <img src="Pfad zum Bild" alt="Name Logo" class="profile-pic">
+            <h22. Credit</h2>
+            <p>Developer</p>
+        </div> -->
+    </div>
+    
+    <!--Schwarze Leiste-->
+    <div class="top-bar">Leons Website</div>
+    <!--Zurück-Button-->
+    <button class="back-button" onclick="removeAnimationFromUrl()">Zurück</button>
+    <script>
+       //Zurück-Button
+       function removeAnimationFromUrl() {
+            const currentUrl = window.location.href;
+            const newUrl = currentUrl.replace("/credits.html", "");
+            window.location.href = newUrl;
+        }
+    </script>
+
+</body>
+</html>
