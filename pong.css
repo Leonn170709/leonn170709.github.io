@@ -47,7 +47,7 @@ body {
     background-color: rgba(35, 35, 35, 0.074);
 }
 
-/* Punktestand */
+/* scoreboard */
 .score-board {
     position: fixed;
     top: 60px;
@@ -59,7 +59,7 @@ body {
 
 
 
-/* Pong-Spielbereich */
+/* Spielbereich */
 #pongGame {
     position: relative;
     width: 400px;
@@ -84,7 +84,7 @@ body {
     transition: width 0.2s;
 }
 #paddle:hover {
-    width: 90px; /* Vergrößert das Paddle bei Hover */
+    width: 90px; 
 }
 
 /* Ball */

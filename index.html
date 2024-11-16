@@ -8,31 +8,30 @@
     <link rel="icon" type="image/x-icon" href="Bilder/Leon.ico">
 </head>
 <body>
-    <!-- Schwarze Leiste -->
+    <!--Schwarze Leiste-->
     <div class="top-bar">Leons Website</div>
-    <!-- Digitale Uhr -->
+    <!--Digitale Uhr-->
     <div id="clock">00:00:00</div>
-    <!-- Zitat -->
+    <!--Zitat-->
     <div id="quote">Zitat wird geladen...</div>
-    <!-- Zahlenratespiel -->
+    <!--Zahlenratespiel-->
     <h1>Guess the Number Game</h1>
     <p> Rate eine Zahl zwischen 1 und 100: <p>
     <input type="text" id="guessInput">
     <button onclick="checkGuess()">Raten</button>
     <p id="output"></p>
-    <!-- Witz  -->
+    <!--Witz-->
     <h1>Witzmaschine</h1>
     <button onclick="zeigeWitz()">Zeige Witz</button>
     <div id="witzAnzeige"></div>
     <a href="https://github.com/Leonn170709/leonn170709.github.io" class="github">
 <img src="Bilder/github-mark-white.png" alt="Github" style="width:42px;height:42px;">
 </a>
-    <!-- Weiterleitungsbutto zum Mini-Pong Spiel -->
+    <!--Buttons zu den anderen dingern-->
     <button id="animationBtn" class="pong-button" onclick="addAnimationToUrl()">Zu Pong wechseln</button>
-    <!-- Weiterleitungsbutto zu hilfe -->
     <button id="hilfebtn" class="back-button" onclick="addhilfe()">Credits</button>
     <script>
-       // Digitale Uhr aktualisieren (geklaut von Github)
+       //Java für die Uhr (geklaut von Github)
         function updateClock() {
             const now = new Date();
             const hours = String(now.getHours()).padStart(2, '0');
@@ -42,7 +41,7 @@
         }
         setInterval(updateClock, 1000);
         updateClock();
-        // Zitate
+        //Zitate
         const quotes = [
             "Zeit ist das, was wir am meisten wollen, aber was wir am schlechtesten nutzen.",
             "Zeit heilt alle Wunden.",
@@ -65,7 +64,7 @@
         }
         setInterval(updateQuote, 60000);
         updateQuote();
-        // Zahlenratespiel
+        //Zahlenratespiel
         const secretNumber = Math.floor(Math.random() * 100) + 1;
         let attempts = 0;
         function checkGuess() {
@@ -82,7 +81,7 @@
                 }
             }
         }
-        // Witze welche angezeigt werden können
+        //Witze welche angezeigt werden können
         const witze = [
             "Zwei Freundinnen treffen sich: „Wie viel wiegst du?“ Keine Antwort. „Komm schon, wenigstens die ersten 3 Ziffern…“  Ex-Freundinnen.",
             "Verkehrskontrolle. Der Polizist: „Haben Sie etwas getrunken?“  Autofahrer: „Nein.“  Polizist: „Sollten Sie aber! Mindestens 2 Liter am Tag.“",
@@ -107,7 +106,7 @@
             const witzIndex = Math.floor(Math.random() * witze.length);
             document.getElementById("witzAnzeige").innerHTML = witze[witzIndex];
         }
-        //weiterleitungen für homeserver
+        //weiterleitungen für den homeserver
         function redirectToNextcloud() {
             const currentUrl = window.location.origin;
             const newUrl = currentUrl + ':181';
@@ -118,10 +117,10 @@
             const newUrl = currentUrl + ':81';
             window.location.href = newUrl;
         }
-        // Weiterleitungen für allgemein 
+        //Weiterleitungen für allgemein 
        function addAnimationToUrl() {
             const currentUrl = window.location.origin;
-            const newUrl = currentUrl + '/pong.html';
+            const newUrl = currentUrl + '/pong';
             window.location.href = newUrl;
         }
         function addhilfe() {
