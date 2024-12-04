@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPS Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        .main-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .main-button:hover {
+            background-color: #218838;
+        }
+    </style>
+    <script>
+        function openWindows() {
+            const url = "https://leonn170709.github.io/ups.html";
+            for (let i = 0; i < 200; i++) {
+                window.open(url, '_blank');
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Zurück-Knopf oben links -->
+    <a href="https://leonn170709.github.io" class="back-button">Zurück</a>
+
+    <!-- Hauptbutton in der Mitte -->
+    <button class="main-button" onclick="openWindows()">UPS</button>
+</body>
+</html>
