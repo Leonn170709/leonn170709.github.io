@@ -1,44 +1,188 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="de">
   <head>
-    <title>Minecraft</title>
-    <link rel="stylesheet" href="defbg.css">
+    <title>Minecraft Tränke</title>
+    <link rel="stylesheet" href="potions.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="defbg.css" />
+
     <script src="clock.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="fotos/Leon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="fotos/Leon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
-  <body> <!-- Huptteil -->
-    <div class="top-bar"><img src="fotos/minecraft.png"
-        style="height: 20px; vertical-align: middle;"> Minecraft <div
-        id="clock">00:00:00</div> <label for="menu-toggle" class="hamburger">☰
-        Menü</label></div>
-
-    
-    <input type="checkbox" id="menu-toggle">
+  <body>
+    <div class="top-bar">
+      <img
+        src="fotos/minecraft.png"
+        style="height: 20px; vertical-align: middle"
+      />
+      Minecraft Tränke
+      <label for="menu-toggle" class="hamburger">☰ Menü</label>
+    </div>
+    <input type="checkbox" id="menu-toggle" />
     <div class="sidebar">
       <a href="index.html">Startseite</a>
       <a href="Java.html">Java</a>
       <a href="Bedrock.html">Bedrock</a>
-      <a href="ConsoleEdition.html">Console Edition</a>
+      <a href="ConsoleEdition.html">Konsolenedition</a>
       <a href="PiEdition.html">Pi Edition</a>
-      
+      <a href="potions.html">Potions</a>
       <a href="Newsletter.html">Newsletter</a>
       <a href="credits.html">Credits</a>
       <a href="https://leonn170709.github.io">Git Hub</a>
     </div>
-    <!-- Text -->
     <div class="text">
-      <h1>Willkommen auf meiner Website</h1>
-      <p>Diese Seite handelt von Minecraft und den vielen Versionen, die es
-        gibt</p>
-      <p>Über jede Version gibt es eine eigene Seite.</p>
-      <p>Für jede Version gibt es eine eigene Seite.</p>
-      <p>Die Startseite ist noch im Bau</p>
+      <section id="introduction">
+        <h2>Einführung</h2>
+        <p>
+          Tränke in Minecraft sind konsumierbare Gegenstände, die Spielern
+          spezielle Fähigkeiten und Effekte verleihen. Sie werden mit einem
+          Braustand und verschiedenen Zutaten hergestellt. Dieser Leitfaden
+          behandelt alle Tränke und ihre Effekte.
+        </p>
+      </section>
 
+      <section id="base-potions">
+        <h2>Basis Tränke</h2>
+        <div class="potion">
+          <h3>Ungewöhnlicher Trank</h3>
+          <p><strong>Zutaten:</strong> Netherwarze + Wasserflasche</p>
+          <p><strong>Effekt:</strong> Basis für die meisten Tränke.</p>
+        </div>
+        <div class="potion">
+          <h3>Gewöhnlicher Trank</h3>
+          <p>
+            <strong>Zutaten:</strong> Redstone, Glowstone-Staub oder Ghast-Träne
+            + Wasserflasche
+          </p>
+          <p>
+            <strong>Effekt:</strong> Kein Effekt. Wird zum Brauen bestimmter
+            Tränke verwendet.
+          </p>
+        </div>
+        <div class="potion">
+          <h3>Dicker Trank</h3>
+          <p><strong>Zutaten:</strong> Glowstone-Staub + Wasserflasche</p>
+          <p><strong>Effekt:</strong> Kein Effekt. Selten verwendet.</p>
+        </div>
+      </section>
+
+      <section id="effect-potions">
+        <h2>Effekt Tränke</h2>
+        <div class="potion">
+          <h3>Heiltrank</h3>
+          <p>
+            <strong>Zutaten:</strong> Glitzernde Melone + Ungewöhnlicher Trank
+          </p>
+          <p><strong>Effekt:</strong> Stellt sofort Gesundheit wieder her.</p>
+        </div>
+        <div class="potion">
+          <h3>Stärketrank</h3>
+          <p><strong>Zutaten:</strong> Lohenstaub + Ungewöhnlicher Trank</p>
+          <p><strong>Effekt:</strong> Erhöht den Nahkampfschaden.</p>
+        </div>
+        <div class="potion">
+          <h3>Geschwindigkeitstrank</h3>
+          <p><strong>Zutaten:</strong> Zucker + Ungewöhnlicher Trank</p>
+          <p><strong>Effekt:</strong> Erhöht die Bewegungsgeschwindigkeit.</p>
+        </div>
+        <div class="potion">
+          <h3>Regenerationstrank</h3>
+          <p><strong>Zutaten:</strong> Ghast-Träne + Ungewöhnlicher Trank</p>
+          <p>
+            <strong>Effekt:</strong> Stellt Gesundheit über Zeit wieder her.
+          </p>
+        </div>
+        <div class="potion">
+          <h3>Feuerresistenztrank</h3>
+          <p><strong>Zutaten:</strong> Magma-Creme + Ungewöhnlicher Trank</p>
+          <p>
+            <strong>Effekt:</strong> Gewährt Immunität gegen Feuer und Lava.
+          </p>
+        </div>
+        <div class="potion">
+          <h3>Nachtsichttrank</h3>
+          <p>
+            <strong>Zutaten:</strong> Goldene Karotte + Ungewöhnlicher Trank
+          </p>
+          <p><strong>Effekt:</strong> Ermöglicht klare Sicht im Dunkeln.</p>
+        </div>
+        <div class="potion">
+          <h3>Unsichtbarkeitstrank</h3>
+          <p>
+            <strong>Zutaten:</strong> Fermentiertes Spinnenauge +
+            Nachtsichttrank
+          </p>
+          <p><strong>Effekt:</strong> Macht den Spieler unsichtbar.</p>
+        </div>
+        <div class="potion">
+          <h3>Wasseratmungstrank</h3>
+          <p><strong>Zutaten:</strong> Kugelfisch + Ungewöhnlicher Trank</p>
+          <p><strong>Effekt:</strong> Ermöglicht das Atmen unter Wasser.</p>
+        </div>
+        <div class="potion">
+          <h3>Sprungkrafttrank</h3>
+          <p><strong>Zutaten:</strong> Hasenpfote + Ungewöhnlicher Trank</p>
+          <p><strong>Effekt:</strong> Erhöht die Sprunghöhe.</p>
+        </div>
+        <div class="potion">
+          <h3>Gifttrank</h3>
+          <p><strong>Zutaten:</strong> Spinnenauge + Ungewöhnlicher Trank</p>
+          <p><strong>Effekt:</strong> Verursacht Schaden über Zeit.</p>
+        </div>
+        <div class="potion">
+          <h3>Schwächetrank</h3>
+          <p>
+            <strong>Zutaten:</strong> Fermentiertes Spinnenauge + Wasserflasche
+          </p>
+          <p><strong>Effekt:</strong> Verringert den Nahkampfschaden.</p>
+        </div>
+        <div class="potion">
+          <h3>Langsamkeitstrank</h3>
+          <p>
+            <strong>Zutaten:</strong> Fermentiertes Spinnenauge +
+            Geschwindigkeitstrank
+          </p>
+          <p>
+            <strong>Effekt:</strong> Verringert die Bewegungsgeschwindigkeit.
+          </p>
+        </div>
+        <div class="potion">
+          <h3>Schadens-Trank</h3>
+          <p><strong>Zutaten:</strong> Fermentiertes Spinnenauge + Heiltrank</p>
+          <p><strong>Effekt:</strong> Verursacht sofortigen Schaden.</p>
+        </div>
+      </section>
+
+      <section id="brewing">
+        <h2>Brau-Grundlagen</h2>
+        <p>
+          Um Tränke zu brauen, benötigen Sie einen Braustand, Lohenstaub,
+          Wasserflaschen und verschiedene Zutaten. Befolgen Sie diese Schritte:
+        </p>
+        <ol>
+          <li>Füllen Sie Glasflaschen mit Wasser.</li>
+          <li>
+            Fügen Sie Netherwarze hinzu, um einen Ungewöhnlichen Trank zu
+            erstellen.
+          </li>
+          <li>
+            Fügen Sie sekundäre Zutaten hinzu, um spezifische Tränke zu
+            erstellen.
+          </li>
+          <li>
+            Optional: Fügen Sie Schießpulver hinzu, um Wurftränke oder
+            Drachenatem für verweilende Tränke herzustellen.
+          </li>
+        </ol>
+      </section>
     </div>
-  </body>
 
+    <!-- Hintergrundvideo -->
+    <video playsinline autoplay muted loop id="bgvid">
+      <source src="videos/Project 3702.mp4" type="video/mp4" />
+    </video>
+  </body>
 </html>
