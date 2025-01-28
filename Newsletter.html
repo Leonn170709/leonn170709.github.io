@@ -10,10 +10,11 @@
     <link rel="icon" type="image/x-icon" href="fotos/Leon.ico">
   </head>
   <body>
-    <div class="top-bar"><img src="fotos/minecraft.png"
-      style="height: 20px; vertical-align: middle;"> Newsletter <div
-      id="clock">00:00:00</div> <label for="menu-toggle" class="hamburger">☰
-      Menü</label></div>
+    <div class="top-bar">
+      <img src="fotos/minecraft.png" style="height: 20px; vertical-align: middle;"> Newsletter
+      <div id="clock">00:00:00</div>
+      <label for="menu-toggle" class="hamburger">☰ Menü</label>
+    </div>
     
     <input type="checkbox" id="menu-toggle">
     <div class="sidebar">
@@ -42,9 +43,9 @@
         
         <div class="section">
           <p>Häufigkeit:</p>
-          <label><input type="radio" required> Wöchentlich</label>
-          <label><input type="radio" required> Monatlich</label>
-          <label><input type="radio" required> Täglich</label>
+          <label><input type="radio" name="frequency" required> Wöchentlich</label>
+          <label><input type="radio" name="frequency" required> Monatlich</label>
+          <label><input type="radio" name="frequency" required> Täglich</label>
         </div>
         <button type="submit"
           onclick="window.location.href='index.html'">Anmelden</button>

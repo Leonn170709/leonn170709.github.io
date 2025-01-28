@@ -17,6 +17,20 @@ body {
     text-align: center;
     width: 300px;
     position: relative;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+}
+.hamburger {
+    position: fixed;
+    top: 0%;
+    left: 10px;
+    background-color: #000000fc;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 11;
+    border-radius: 5px;
 }
 
 .newsletter h2 {
