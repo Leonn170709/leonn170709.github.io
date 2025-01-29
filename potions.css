@@ -26,7 +26,7 @@ h2 {
   padding-bottom: 10px;
 }
 
-.potion {
+.mika {
   margin-bottom: 20px;
   padding: 15px;
   background-color: #2b2a2a66;
@@ -37,11 +37,11 @@ h2 {
   -webkit-backdrop-filter: blur(5px);
 }
 
-.potion h3 {
+.mika h3 {
   color: #ffffff;
   margin-top: 0;
 }
 
-.potion p {
+.mika p {
   margin: 5px 0;
 }
