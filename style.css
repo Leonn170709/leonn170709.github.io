@@ -151,7 +151,7 @@ h2 {
   position: fixed;
   top: 80%;
   left: 90%;
-  
+
   width: 100px;
   height: 100px;
   transform-style: preserve-3d;
@@ -163,21 +163,37 @@ h2 {
   height: 100px;
   background-color: rgba(0, 0, 0, 0.466);
   border: 1px solid rgba(0, 0, 0, 0.466);
- 
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-filter: blur(3px);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(5px 5px 10px #000000);
 }
-.front  { transform: translateZ(50px); }
-.back   { transform: rotateY(180deg) translateZ(50px); }
-.left   { transform: rotateY(-90deg) translateZ(50px); }
-.right  { transform: rotateY(90deg) translateZ(50px); }
-.top    { transform: rotateX(90deg) translateZ(50px); }
-.bottom { transform: rotateX(-90deg) translateZ(50px); }
+.front {
+  transform: translateZ(50px);
+}
+.back {
+  transform: rotateY(180deg) translateZ(50px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(50px);
+}
+.top {
+  transform: rotateX(90deg) translateZ(50px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(50px);
+}
 
 @keyframes rotate-cube {
-  from { transform: rotateX(0deg) rotateY(0deg); }
-  to { transform: rotateX(360deg) rotateY(360deg); }
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
 }
