@@ -1,24 +1,27 @@
 <html>
   <head>
     <title>Minecraft</title>
+    <!-- Verlinkung der CSS-Dateien -->
     <link rel="stylesheet" href="defbg.css" />
-
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="stylem.css" />
+    <!-- Verlinkung des Favicon bilds-->
     <link rel="icon" type="image/x-icon" href="fotos/Leon.ico" />
+    <!-- Zeichensatz und Viewport-Einstellungen (charset ist unnötig wil default UTF-8 ist überall) -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <!-- Huptteil -->
+    <!-- Teil das in jeder HTML-Datei ist -->
     <div class="top-bar">
-      <img
-        src="fotos/minecraft.png"
-        style="height: 20px; vertical-align: middle" />
+      <!-- Logo und Menü-Label -->
+      <img src="fotos/minecraft.png" style="height: 20px; vertical-align: middle" />
       Minecraft <label for="menu-toggle" class="hamburger">☰ Menü</label>
     </div>
 
+    <!-- Menü Checkbox für die Sidebar -->
     <input type="checkbox" id="menu-toggle" />
+    <!-- Sidebar mit Links zu verschiedenen Seiten -->
     <div class="sidebar">
       <a href="index.html">Startseite</a>
       <a href="Java.html">Java</a>
@@ -30,7 +33,7 @@
       <a href="credits.html">Credits</a>
       <a href="https://leonn170709.github.io">GitHub</a>
     </div>
-    <!-- Text -->
+    <!-- Text welcher angezeigt wird und verschoben werden kann -->
     <div class="text">
       <section>
         <h1>Willkommen auf meiner Website</h1>
@@ -50,8 +53,9 @@
         <p>Die Website ist immer noch im Bau.</p>
       </section>
     </div>
-    <video playsinline autoplay muted loop id="bgvid" src="videos/Project 3702.mp4" type="video/mp4" >
-    </video>
+    <!-- Das Hintergrund Video -->
+    <video playsinline autoplay muted loop id="bgvid" src="videos/Project 3702.mp4" type="video/mp4"></video>
+    <!-- HTML für den Würfel -->
     <div class="container">
       <div class="box front"></div>
       <div class="box back"></div>
@@ -59,7 +63,10 @@
       <div class="box right"></div>
       <div class="box top"></div>
       <div class="box bottom"></div>
-  </div>
-  </style>
+    </div>
   </body>
 </html>
+ <!-- Ich hoffe es ist ihnen okay das ich nur hier die meisten Kommentare hin mache 
+  ,denn die html datein sind meist gleich und nur der Inhalt wurde von mir geändert 
+  ,da es so effizienter ist als alles neu zu schreiben -->
+  

@@ -1,21 +1,20 @@
-
 <html lang="de">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter</title>
     <link rel="stylesheet" href="style.css">
-    
     <link rel="stylesheet" href="newsletter.css">
     <link rel="icon" type="image/x-icon" href="fotos/Leon.ico">
   </head>
   <body>
+    <!-- Obere Leiste mit Logo und Menü Button -->
     <div class="top-bar">
       <img src="fotos/minecraft.png" style="height: 20px; vertical-align: middle;"> Newsletter
-      
       <label for="menu-toggle" class="hamburger">☰ Menü</label>
     </div>
     
+    <!-- Menü Checkbox für das Seitenmenü -->
     <input type="checkbox" id="menu-toggle">
     <div class="sidebar">
       <a href="index.html">Startseite</a>
@@ -29,19 +28,22 @@
       <a href="https://leonn170709.github.io">Git Hub</a>
     </div>
 
+    <!-- Newsletter Anmeldeformular -->
     <div class="newsletter">
       <h2>Newsletter Anmeldung</h2>
       <form>
         <label for="email">E-Mail:</label>
         <input type="email" id="email" placeholder="Deine E-Mail-Adresse" required>
         
+        <!-- Interessen Auswahl -->
         <div class="section">
           <p>Interessen:</p>
-          <label><input type="checkbox" > Updates</label>
-          <label><input type="checkbox" > Mods</label>
-          <label><input type="checkbox" > Server</label>
+          <label><input type="checkbox"> Updates</label>
+          <label><input type="checkbox"> Mods</label>
+          <label><input type="checkbox"> Server</label>
         </div>
         
+        <!-- Häufigkeit Auswahl -->
         <div class="section">
           <p>Häufigkeit:</p>
           <label><input type="radio" name="frequency" required> Wöchentlich</label>
@@ -49,12 +51,17 @@
           <label><input type="radio" name="frequency" required> Täglich</label>
         </div>
         <button type="submit"
-          onclick="window.location.href='index.html'">Anmelden</button>
+        onclick="window.location.href='index.html'">Anmelden</button>
       </form>
     </div>
+<!-- wieso klappt email nicht?-->
+
+    <!-- Hintergrundvideo -->
     <video playsinline autoplay muted loop id="bgvid">
       <source src="videos/Project 3702.mp4" type="video/mp4">
     </video>
+
+    <!-- Html für den Würfel -->
     <div class="container">
       <div class="box front"></div>
       <div class="box back"></div>
@@ -62,8 +69,6 @@
       <div class="box right"></div>
       <div class="box top"></div>
       <div class="box bottom"></div>
-  </div>
-      </form>
     </div>
   </body>
 </html>

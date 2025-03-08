@@ -1,3 +1,5 @@
+/* die haupt css datei mit den wichtigsten/standards css anweisungen */
+
 .top-bar {
   background-color: #000000;
   color: white;
@@ -9,7 +11,7 @@
   left: 0;
   z-index: 10;
 }
-
+/* die sidebrar wird hier gestiled */
 .sidebar {
   width: 200px;
   height: 100vh;
@@ -127,7 +129,7 @@ h2 {
   border-bottom: 2px solid #ffffff;
   padding-bottom: 10px;
 }
-
+/*geklaut von mika aber umgeändert */
 .mika {
   margin-bottom: 20px;
   padding: 15px;
@@ -147,46 +149,47 @@ h2 {
 .mika p {
   margin: 5px 0;
 }
+/*Hier der rotierende block (ist echt schlimm mit key frames zu atbeiten) */
 .container {
   position: fixed;
   top: 80%;
   left: 90%;
-
+  transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
   transform-style: preserve-3d;
   animation: rotate-cube 5s infinite linear;
+  z-index: 0;
 }
 .box {
   position: absolute;
   width: 100px;
   height: 100px;
-  background-color: rgba(0, 0, 0, 0.466);
-  border: 1px solid rgba(0, 0, 0, 0.466);
-
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(5px 5px 10px #000000);
+  background-size: cover;
 }
 .front {
   transform: translateZ(50px);
+  background-image: url("fotos/Side.webp");
 }
 .back {
   transform: rotateY(180deg) translateZ(50px);
+  background-image: url("fotos/Side.webp");
 }
 .left {
   transform: rotateY(-90deg) translateZ(50px);
+  background-image: url("fotos/Side.webp");
 }
 .right {
   transform: rotateY(90deg) translateZ(50px);
+  background-image: url("fotos/Side.webp");
 }
 .top {
   transform: rotateX(90deg) translateZ(50px);
+  background-image: url("fotos/top.png");
 }
 .bottom {
   transform: rotateX(-90deg) translateZ(50px);
+  background-image: url("fotos/bottom.webp");
 }
 
 @keyframes rotate-cube {
