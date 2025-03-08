@@ -160,12 +160,20 @@ h2 {
   transform-style: preserve-3d;
   animation: rotate-cube 5s infinite linear;
   z-index: 0;
+  
+  
 }
 .box {
   position: absolute;
   width: 100px;
   height: 100px;
   background-size: cover;
+  filter: brightness(0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 1;
+  
 }
 .front {
   transform: translateZ(50px);

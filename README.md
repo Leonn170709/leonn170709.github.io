@@ -44,5 +44,5 @@ Weil alles eine Lizenz haben sollte: **Lizenz des Wahnsinns**. Mach damit, was d
 
 ## ❗ Wichtige Anmerkung
 
-Diese README wurde zu 100% *nicht* von ChatGPT erstellt. Ich habe absolut nichts damit zu tun. Ironie? Vielleicht. Oder doch nicht? 🤔
+Diese README wurde zu 100% *nicht* von ChatGPT erstellt. ChatGPT hat absolut nichts damit zu tun. Ironie? Vielleicht. Oder doch nicht? 🤔
 
