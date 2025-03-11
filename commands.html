@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Minecraft Befehle</title>
+    <link rel="stylesheet" href="commands.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="defbg.css" />
+    <link rel="icon" type="image/x-icon" href="fotos/Leon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <img
+        src="fotos/minecraft.png"
+        style="height: 20px; vertical-align: middle" />Minecraft Befehle
+      <label for="menu-toggle" class="hamburger">☰ Menü</label>
+    </div>
+    <input type="checkbox" id="menu-toggle" />
+    <div class="sidebar">
+      <a href="index.html">Startseite</a>
+      <a href="Java.html">Java</a>
+      <a href="Bedrock.html">Bedrock</a>
+      <a href="ConsoleEdition.html">Konsolenedition</a>
+      <a href="PiEdition.html">Pi Edition</a>
+      <a href="potions.html">Potions</a>
+      <a href="commands.html">Commands</a>
+      <a href="Newsletter.html">Newsletter</a>
+      <a href="credits.html">Credits</a>
+      <a href="test.html">Git Hub</a>
+    </div>
+    <div class="text">
+      <section id="introduction">
+        <h2>Befehle</h2>
+        <p>
+          Befehle in Minecraft sind spezielle Anweisungen, die Spielern
+          ermöglichen, das Spiel zu steuern und zu modifizieren. Dieser Leitfaden
+          behandelt die wichtigsten Befehle und ihre Verwendung.
+        </p>
+      </section>
+
+      <section>
+        <details>
+          <summary>Grundlegende Befehle</summary>
+          <div class="mika">
+        <h3>/help</h3>
+        <p><strong>Beschreibung:</strong> Zeigt eine Liste aller Befehle an.</p>
+          </div>
+          <div class="mika">
+        <h3>/give</h3>
+        <p><strong>Beschreibung:</strong> Gibt einem Spieler ein bestimmtes Item.</p>
+        <p><strong>Syntax:</strong> /give [Spieler] [Item] [Menge]</p>
+          </div>
+          <div class="mika">
+        <h3>/tp</h3>
+        <p><strong>Beschreibung:</strong> Teleportiert einen Spieler zu einem anderen Spieler oder zu bestimmten Koordinaten.</p>
+        <p><strong>Syntax:</strong> /tp [Ziel] [Zielort]</p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <details>
+          <summary>Erweiterte Befehle</summary>
+          <div class="mika">
+        <h3>/summon</h3>
+        <p><strong>Beschreibung:</strong> Beschwört eine Entität an einem bestimmten Ort.</p>
+        <p><strong>Syntax:</strong> /summon [Entität] [Koordinaten]</p>
+          </div>
+          <div class="mika">
+        <h3>/effect</h3>
+        <p><strong>Beschreibung:</strong> Verleiht einem Spieler einen Status-Effekt.</p>
+        <p><strong>Syntax:</strong> /effect [Spieler] [Effekt] [Dauer] [Stärke]</p>
+          </div>
+          <div class="mika">
+        <h3>/gamemode</h3>
+        <p><strong>Beschreibung:</strong> Ändert den Spielmodus eines Spielers.</p>
+        <p><strong>Syntax:</strong> /gamemode [Modus] [Spieler]</p>
+          </div>
+          <div class="mika">
+        <h3>/weather</h3>
+        <p><strong>Beschreibung:</strong> Ändert das Wetter im Spiel.</p>
+        <p><strong>Syntax:</strong> /weather [Typ]</p>
+          </div>
+          <div class="mika">
+        <h3>/time</h3>
+        <p><strong>Beschreibung:</strong> Ändert die Tageszeit im Spiel.</p>
+        <p><strong>Syntax:</strong> /time set [Zeit]</p>
+          </div>
+        </details>
+      </section>
+
+      <section>
+        <details>
+          <summary>Experten Befehle</summary>
+          <div class="mika">
+        <h3>/xp</h3>
+        <p><strong>Beschreibung:</strong> Gibt einem Spieler Erfahrungspunkte.</p>
+        <p><strong>Syntax:</strong> /xp [Menge] [Spieler]</p>
+          </div>
+          <div class="mika">
+        <h3>/kill</h3>
+        <p><strong>Beschreibung:</strong> Tötet eine Entität.</p>
+        <p><strong>Syntax:</strong> /kill [Ziel]</p>
+          </div>
+          <div class="mika">
+        <h3>/locate</h3>
+        <p><strong>Beschreibung:</strong> Findet die Koordinaten der nächsten Struktur eines bestimmten Typs.</p>
+        <p><strong>Syntax:</strong> /locate [Struktur]</p>
+          </div>
+          <div class="mika">
+        <h3>/setblock</h3>
+        <p><strong>Beschreibung:</strong> Platziert einen Block an den angegebenen Koordinaten.</p>
+        <p><strong>Syntax:</strong> /setblock [Koordinaten] [Block]</p>
+          </div>
+          <div class="mika">
+        <h3>/fill</h3>
+        <p><strong>Beschreibung:</strong> Füllt einen Bereich mit einem bestimmten Block.</p>
+        <p><strong>Syntax:</strong> /fill [von Koordinaten] [bis Koordinaten] [Block]</p>
+          </div>
+          <div class="mika">
+        <h3>/clone</h3>
+        <p><strong>Beschreibung:</strong> Kopiert Blöcke von einem Bereich in einen anderen.</p>
+        <p><strong>Syntax:</strong> /clone [von Koordinaten] [bis Koordinaten] [Ziel Koordinaten]</p>
+          </div>
+        </details>
+      </section></div>
+      <video playsinline autoplay muted loop id="bgvid" src="videos/Project 3702.mp4" type="video/mp4" />
+    </video>
+    <!-- Hier ist das html für den würfel -->
+    <div class="container">
+      <div class="box front"></div>
+      <div class="box back"></div>
+      <div class="box left"></div>
+      <div class="box right"></div>
+      <div class="box top"></div>
+      <div class="box bottom"></div>
+  </div>
+  </body>
+</html>
