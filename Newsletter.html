@@ -13,8 +13,7 @@
       <img src="fotos/minecraft.png" style="height: 20px; vertical-align: middle;"> Newsletter
       <label for="menu-toggle" class="hamburger">☰ Menü</label>
     </div>
-    
-    <!-- Menü Checkbox für das Seitenmenü -->
+   
     <input type="checkbox" id="menu-toggle">
     <div class="sidebar">
       <a href="index.html">Startseite</a>
@@ -30,14 +29,12 @@
       <a href="test.html">Git Hub</a>
     </div>
 
-    <!-- Newsletter Anmeldeformular -->
     <div class="newsletter">
       <h2>Newsletter Anmeldung</h2>
       <form action="index.html" method="post">
         <label for="email">E-Mail:</label>
         <input type="email" id="email" placeholder="Deine E-Mail-Adresse" required>
-        
-        <!-- Interessen Auswahl -->
+       
         <div class="section">
           <p>Interessen:</p>
           <label><input type="checkbox"> Updates</label>
@@ -45,7 +42,7 @@
           <label><input type="checkbox"> Server</label>
         </div>
         
-        <!-- Häufigkeit Auswahl -->
+    
         <div class="section">
           <p>Häufigkeit:</p>
           <label><input type="radio" name="frequency" required> Wöchentlich</label>
@@ -56,12 +53,11 @@
       </form>
     </div>
 
-    <!-- Hintergrundvideo -->
-    <video playsinline autoplay muted loop id="bgvid">
-      <source src="videos/Project 3702.mp4" type="video/mp4">
+   
+    <video playsinline autoplay muted loop id="bgvid" src="videos/Project 3702.mp4" type="video/mp4" >
     </video>
 
-    <!-- Html für den Würfel -->
+    
     <div class="container">
       <div class="box front"></div>
       <div class="box back"></div>
@@ -70,5 +66,6 @@
       <div class="box top"></div>
       <div class="box bottom"></div>
     </div>
+    <div id="loadingScreen">Die Bilder und Videos werden Geladen</div>
   </body>
 </html>
