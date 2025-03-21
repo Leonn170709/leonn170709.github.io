@@ -9,7 +9,7 @@
   left: 0;
   z-index: 10;
 }
-/* die sidebrar wird hier gestiled */
+/* die sidebrar wird hier gedingd */
 .sidebar {
   width: 200px;
   height: 100vh;
@@ -20,22 +20,24 @@
   top: 45px;
   left: -200px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
   z-index: 9;
 }
 
 .sidebar a {
   display: block;
-  padding: 15px;
+  padding: 15px ;
   color: white;
   text-decoration: none;
-  border-bottom: 1px solid #444444;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .sidebar a:hover {
-  background-color: #57575798;
+  background-color: rgba(255, 255, 255, 0.2); 
+  color: #ffffff; 
 }
 
 #menu-toggle {
