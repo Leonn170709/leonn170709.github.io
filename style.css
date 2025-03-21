@@ -1,5 +1,3 @@
-/* die haupt css datei mit den wichtigsten/standards css anweisungen */
-
 .top-bar {
   background-color: #000000;
   color: white;
@@ -60,6 +58,9 @@
   border-radius: 5px;
 }
 
+abbr { 
+  text-decoration: none;
+} 
 #menu-toggle:checked {
   margin-left: 200px;
 }
@@ -150,7 +151,7 @@ h2 {
 .mika p {
   margin: 5px 0;
 }
-/*Hier der rotierende block (ist echt schlimm mit key frames zu atbeiten) */
+
 .container {
   position: fixed;
   top: 80%;
@@ -241,7 +242,7 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  z-index: 1000;
+  z-index: 999;
   animation: fadeOut 3s forwards;
 } /*normal
   */
