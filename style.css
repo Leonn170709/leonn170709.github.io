@@ -1,6 +1,11 @@
+:root {
+  --primary-color: #3333336c;
+  --secondary-color: #000000;
+  --accent-color: white;
+}
 .top-bar {
-  background-color: #000000;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--secondary-color);
   padding: 20px;
   width: 100%;
   text-align: center;
@@ -9,12 +14,12 @@
   left: 0;
   z-index: 20;
 }
-/* die sidebrar wird hier gedingd */
+
 .sidebar {
   width: 200px;
   height: 100vh;
-  background-color: #3333336c;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
   padding-top: 20px;
   position: fixed;
   top: 45px;
@@ -29,7 +34,7 @@
 .sidebar a {
   display: block;
   padding: 15px ;
-  color: white;
+  color: var(--accent-color);
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -37,7 +42,7 @@
 
 .sidebar a:hover {
   background-color: rgba(255, 255, 255, 0.2); 
-  color: #ffffff; 
+  color: var(--accent-color); 
 }
 
 #menu-toggle {
@@ -53,7 +58,7 @@
   top: 10px;
   left: 10px;
   background-color: #000000fc;
-  color: white;
+  color: var(--accent-color);
   padding: 10px;
   cursor: pointer;
   z-index: 11;
@@ -70,7 +75,7 @@ abbr {
 button {
   padding: 12px 24px;
   font-size: 1.2em;
-  color: white;
+  color: var(--accent-color);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -100,7 +105,7 @@ table {
   margin: 20px auto;
   border-collapse: collapse;
   background-color: #2c2f3300;
-  color: #ffffff;
+  color: var(--accent-color);
   font-family: Arial, sans-serif;
 }
 
@@ -119,7 +124,7 @@ table {
 section {
   padding: 20px;
   margin: 20px;
-  background-color: #3333336c;
+  background-color: var(--primary-color);
   border-radius: 8px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -129,16 +134,16 @@ section {
 }
 
 h2 {
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
   padding-bottom: 10px;
 }
 /*geklaut von mika aber umgeändert */
 .mika {
   margin-bottom: 20px;
   padding: 15px;
-  background-color: #2b2a2a66;
-  border-left: 5px solid #ffffff;
+  background-color: var(--primary-color);
+  border-left: 5px solid var(--accent-color);
   border-radius: 4px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -146,7 +151,7 @@ h2 {
 }
 
 .mika h3 {
-  color: #ffffff;
+  color: var(--accent-color);
   margin-top: 0;
 }
 
@@ -233,7 +238,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--primary-color);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(5px);
@@ -253,5 +258,6 @@ h2 {
   100% {
       opacity: 0;
       visibility: hidden;
+      z-index: -2;
   }
 }

@@ -1,9 +1,7 @@
-body {
-  background: rgb(2,0,36);
-  background: radial-gradient(circle, rgb(100, 100, 102) 0%, rgb(86, 88, 88) 60%, rgb(60, 64, 65) 100%); 
+body { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: var(--accent-color);
   
 }
 video {
