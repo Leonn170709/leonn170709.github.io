@@ -3,18 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsletter</title>
+    <title>Gameplay Hochladen</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="newsletter.css">
     <link rel="icon" type="image/x-icon" href="fotos/Leon.ico">
   </head>
   <body>
-    
     <div class="top-bar">
-      <img src="fotos/minecraft.png" style="height: 20px; vertical-align: middle;"> Newsletter
-      <label for="menu-toggle" class="hamburger"><abbr title="Klicken um das Mennü zu Öffnen/Schließen">☰ Menü</abbr></label>
+      <img src="fotos/minecraft.png"
+        style="height: 20px; vertical-align: middle;"> Newsletter
+      <label for="menu-toggle" class="hamburger">☰ Menü</label>
     </div>
-   
     <input type="checkbox" id="menu-toggle">
     <div class="sidebar">
       <a href="index.html">Startseite</a>
@@ -27,38 +26,25 @@
       <a href="commands.html">Commands</a>
       <a href="Newsletter.html">Newsletter</a>
       <a href="credits.html">Credits</a>
-       <a href="hochladen.html">Gameplay hochladen</a>
+      <a href="hochladen.html">Gameplay hochladen</a>
     </div>
-
     <div class="newsletter">
-      <h2>Newsletter Anmeldung</h2>
+      <h2>Lade dein Gameplay hoch</h2>
       <form action="index.html" method="post">
-        <label >E-Mail:</label>
-        <input type="email"  placeholder="Deine E-Mail-Adresse" required>
-       
+        <label >Benutzername :</label>
+        <input   placeholder="Dein Benutzername" required>
         <div class="section">
-          <p>Interessen:</p>
-          <label><input type="checkbox"> Updates</label>
-          <label><input type="checkbox"> Mods</label>
-          <label><input type="checkbox"> Server</label>
+          <p>Hochladen:</p>
+          <div class="uploader">
+            <label for="fileInput">Clicken zum Hochladen</label>
+            <input type="file" id="fileInput" accept="video/*">
+          </div>
         </div>
-        
-    
-        <div class="section">
-          <p>Häufigkeit:</p>
-          <label><input type="radio" name="frequency" required> Wöchentlich</label>
-          <label><input type="radio" name="frequency" required> Monatlich</label>
-          <label><input type="radio" name="frequency" required> Täglich</label>
-        </div>
-        <button type="submit">Anmelden</button>
-      </form>
-    </div>
-
-   
-    <video playsinline disablePictureInPicture autoplay muted loop  src="videos/Project 3702.mp4" type="video/mp4"></video>
+        <button type="submit">Hochladen</button>
+      </div>
+      <video playsinline disablePictureInPicture autoplay muted loop
+        src="videos/Project 3702.mp4" type="video/mp4"></video>
     </video>
-
-    
     <div class="container">
       <div class="box front"></div>
       <div class="box back"></div>

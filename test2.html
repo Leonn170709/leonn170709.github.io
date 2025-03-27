@@ -1,21 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html 
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Background Uploader</title>
     <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
+   
         .uploader {
             position: relative;
             padding: 20px;
@@ -42,20 +33,5 @@
         <label for="fileInput">Click to upload a photo</label>
         <input type="file" id="fileInput" accept="image/*">
     </div>
-
-    <script>
-        const fileInput = document.getElementById('fileInput');
-
-        fileInput.addEventListener('change', (event) => {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = (e) => {
-                    document.body.style.backgroundImage = `url(${e.target.result})`;
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-    </script>
 </body>
 </html>

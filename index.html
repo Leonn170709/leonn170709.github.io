@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Minecraft</title>
-    <link rel="stylesheet" href="defbg.css" />
+    
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="stylem.css" />
     <link rel="icon" type="image/x-icon" href="fotos/Leon.ico" />
@@ -10,15 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <!-- Teil das in jeder HTML Datei ist -->
+    <!-- Die Leiste oben -->
     <div class="top-bar">
       <img
         src="fotos/minecraft.png"
         style="height: 20px; vertical-align: middle" />
       Minecraft <label for="menu-toggle" class="hamburger"><abbr title="Klicken um das Mennü zu Öffnen/Schließen">☰ Menü</abbr></label>
     </div>
-
-    <!-- Checkbox für die Sidebar -->
     <input type="checkbox" id="menu-toggle" />
     <div class="sidebar">
       <a href="index.html">Startseite</a>
@@ -31,26 +29,20 @@
       <a href="commands.html">Commands</a>
       <a href="Newsletter.html">Newsletter</a>
       <a href="credits.html">Credits</a>
-      <a href="test.html">GitHub</a>
+      <a href="hochladen.html">Gameplay hochladen</a>
     </div>
-    <!-- Text welcher angezeigt wird und verschoben werden kann -->
     <div class="text">
       <section>
         <h1>Willkommen auf meiner Website</h1>
         <p>
-          Diese Seite ist eine Wiki über
-          <a href="https://minecraft.com" target="_blank">Minecraft</a>
+          Diese Seite ist ein kleines Wiki über
+          <a href="https://minecraft.com" target="_blank"><strong>Minecraft</strong></a>
         </p>
         <p>Hier findest du Informationen zu:</p>
         <ul>
           <li>Java Edition - Die ursprüngliche PC-Version von Minecraft.</li>
-          <li>
-            Bedrock Edition - Die plattformübergreifende Version für Konsolen,
-            Mobilgeräte und Windows 10.
-          </li>
-          <li>
-            Console Edition - Die speziellen Versionen für ältere Konsolen.
-          </li>
+          <li>Bedrock Edition - Die Minecraft Version für Konsolen, Mobilgeräte und Windows.</li>
+          <li>Console Edition - Die spezielle Version für ältere Konsolen.</li>
           <li>Pi Edition - Eine spezielle Version für den Raspberry Pi.</li>
           <li>Potions - Eine Übersicht über alle Tränke im Spiel.</li>
           <li>Newsletter - Melde dich für den Newsletter an.</li>
@@ -59,9 +51,7 @@
         <p>Die Website ist immer noch im Bau.</p>
       </section>
     </div>
-    <!-- Das Hintergrund Video -->
-    <video playsinline disablePictureInPicture autoplay muted loop id="bgvid" src="videos/Project 3702.mp4" type="video/mp4"></video>
-    <!-- HTML für den Würfel -->
+    <video playsinline disablePictureInPicture autoplay muted loop src="videos/Project 3702.mp4" type="video/mp4"></video>
     <div class="container">
       <div class="box front"></div>
       <div class="box back"></div>
@@ -70,6 +60,6 @@
       <div class="box top"></div>
       <div class="box bottom"></div>
     </div>
-    <div id="loadingScreen">Die Bilder und Videos werden Geladen</div>
+    <div class="loadingScreen">Die Bilder und Videos werden Geladen</div>
   </body>
 </html>
