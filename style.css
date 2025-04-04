@@ -9,12 +9,13 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--accent-color);
-  background-color: var(--background-color);
+  background-image: url("fotos/hintergrund.webp");
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: var(--accent-color);
   line-height: 1.6;
+  
 
 }
 video {
