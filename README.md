@@ -13,14 +13,6 @@ Weil ich GitHub mehr vertraue als mir selbst, wenn es um das Sichern von Daten g
 - **Dinge, die vielleicht wichtig sind... oder auch nicht** 🤷
 - **README-Datei mit unnötigem, aber stylishem Text** (den du gerade liest, Glückwunsch! 🎉)
 
-## ⚡ Installation (Falls nötig)
-
-```bash
-# Falls du denkst, dass das hier wichtig ist:
-git clone https://github.com/deinBenutzername/schulprojekt.git
-cd schulprojekt
-```
-
 ## 🧐 Was du hier tun kannst
 
 ✅ Code anschauen, falls es Sinn macht\

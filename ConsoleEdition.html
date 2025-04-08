@@ -15,10 +15,12 @@
         src="fotos/minecraft.png"
         style="height: 20px; vertical-align: middle" />
       Minecraft Console Edition
-      <label for="menu-toggle" class="hamburger"><abbr
-          title="Klicken um das Mennü zu Öffnen/Schließen">☰ Menü</abbr></label>
+      <label for="menu-toggle" class="hamburger"><abbr title="Klicken um das Mennü zu Öffnen/Schließen">☰ Menü</abbr></label>
+          <label for="cube-toggle" class="hamburger2"><abbr title="Klicken um den Cube zu Verstecken/Zeigen ">☰ Cube</abbr></label>
     </div>
+    <input type="checkbox" id="cube-toggle" checked />
     <input type="checkbox" id="menu-toggle" />
+    
     <div class="sidebar">
       <a href="index.html">Startseite</a>
       <a href="Java.html">Java</a>
@@ -138,6 +140,35 @@
           </div>
         </details>
       </section>
+      <section>
+        <details>
+          <summary>Vor- und Nachteile</summary>
+
+          <h3>Vorteile</h3>
+          <div class="mika">
+            <ul>
+              <li>Geringere Systemanforderungen</li>
+              <li>Einfach zu bedienen auf Konsolen</li>
+              <li>Optimiert für Konsolen</li>
+              <li>Stabile Performance</li>
+              <li>Eingebaute Minispiele</li>
+            </ul>
+          </div>
+          <h3>Nachteile</h3>
+          <div class="mika">
+            <ul>
+              <li>Kein Modding</li>
+              <li>Keine Serverauswahl</li>
+              <li>Weniger exklusive Funktionen</li>
+              <li>Längere Wartezeiten für Updates</li>
+              <li>Keine Updates Mehr</li>
+              <li>Modifikationen sind nicht möglich</li>
+            </ul>
+          </div>
+          
+          
+        </details>
+      </section>
     </div>
     <!-- Das Hintergrund Video  -->
     <video playsinline disablePictureInPicture autoplay muted loop
@@ -151,6 +182,6 @@
       <div class="box top"></div>
       <div class="box bottom"></div>
     </div>
-    <div class="loadingScreen">Die Bilder und Videos werden Geladen</div>
+    
   </body>
 </html>
