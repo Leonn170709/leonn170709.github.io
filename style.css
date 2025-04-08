@@ -110,7 +110,7 @@ abbr {
 }
 
 #cube-toggle:checked + .container {
-  left: 0;
+  right: 0;
   
 }
 #cube-toggle:checked {
@@ -122,7 +122,7 @@ abbr {
   position: fixed;
   top: 10px;
   right: 10px;
-  background-color: #00000000;
+  background-color: var( --secondary-color);
   color: var(--accent-color);
   padding: 10px;
   cursor: pointer;
@@ -135,6 +135,7 @@ abbr {
   margin-left: 300px;
   transition: all 0.3s ease;
 }
+
 
 button {
   padding: 12px 24px;
