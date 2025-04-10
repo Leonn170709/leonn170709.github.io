@@ -1,4 +1,4 @@
-Noch zu fixen: Website funktioniert bei einigen geräten nicht 
-,welches den minecraft grass block in der top bar zu groß macht,
-aber funktioniert in der github repo welche der exakt gleiche code ist.
-video lädt zu lange. z indexe reparieren irgendwie klappts aber 
+Noch Machen: Nichts
+Probleme zu reparieren: Darstellungsproblem: Auf einigen Geräten wird der Minecraft-Grasblock in der oberen Leiste zu groß dargestellt. Dieses Problem tritt jedoch nicht in der GitHub-Repository-Vorschau auf, obwohl dort exakt derselbe Code verwendet wird. Komisch.
+Ladezeit des Videos: Das eingebettete Video benötigt zu lange zum Laden.
+Z-Index-Probleme: Einige Z-Index-Werte müssen korrigiert werden. Die aktuellen funktionieren zwar, sollten aber verbessert werden.
